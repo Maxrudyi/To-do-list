@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  background-color: #003950;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 100px;
+  width: 950px;
+  background-color: #002838;
+  border-radius: 20px;
+  box-shadow: -1px 0px 30px 2px rgba(0, 40, 56, 0.53);
+  padding: 30px;
+}
+
+.form {
+  margin: 30px 0 0 30px;
+
+  .form__text {
+    width: 600px;
+    height: 45px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #eeeeee;
+  }
+
+  .form__btn {
+    margin-left: 10px;
+    width: 230px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #008e9f;
+    color: #ffff;
+    transition: 0.3s;
+  }
+  .form__btn:hover {
+    cursor: pointer;
+    background-color: #006f80;
+  }
+}
+
+.button__state {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+.state__btn.active {
+  background-color: #0ec3d7;
+}
+
+.state__btn.active:hover {
+  background-color: #17aabb;
+}
+
+.state__btn {
+  margin: 0 7px 0 7px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  background-color: #008e9f;
+  color: #ffff;
+  transition: 0.3s;
+}
+
+.state__btn:hover {
+  cursor: pointer;
+  background-color: #006f80;
+}
+
+.state__btn:nth-child(1) {
+  width: 80px;
+}
+
+.state__btn:nth-child(2) {
+  width: 130px;
+}
+
+.state__btn:nth-child(3) {
+  width: 150px;
+}
+
+.notes__list {
+  list-style-type: none;
+  margin: 50px 80px 0 80px;
+
+  li {
+    height: 45px;
+    background-color: #009688;
+    margin: 20px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 30px;
+    color: #ffff;
+    font-size: 18px;
+  }
+}
+
+.complated {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.notes__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notes__done {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notes__delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.notes__edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__clean {
+  display: flex;
+  justify-content: center;
+
+  button {
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ba0f30;
+    color: #ffff;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.clean__btn.hidden {
+  display: none;
+}
